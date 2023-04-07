@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Brian Teeters Portfolio</title>
+
+    <!-- icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <header>
+    <nav class="ps-4 ps-md-5">
+        <div class="home">
+            <a href="#" aria-lebel="home">
+                <span>Brian Teeters</span>
+            </a>
+        </div>
+
+        <div id="sidebarContainer">
+            <input type="checkbox" class="openSideMenu" id="openSideMenu">
+          
+            <label for="openSideMenu" class="sideIconToggle">
+              <div class="spinner diagonal part-1"></div>
+              <div class="spinner horizontal"></div>
+              <div class="spinner diagonal part-2"></div>
+            </label>
+          
+            <div id="sideMenu">
+              <ul class="sideMenuInner">
+                <li class="active" onclick="hideSidebar()"><a href="#works" data-toggle="tab">Work</a></li>
+                <li onclick="hideSidebar()"><a href="#about" data-toggle="tab">About</a></li>
+                <li onclick="hideSidebar()"><a href="#contact" data-toggle="tab">Contact</a></li>
+              </ul>
+            </div>
+        </div>
+    </nav>  
+  </header>
+  <body>
+  <main>
+      <!-- Main Image -->
+      <div class="hero"> <!-- Reduce Size of This Image. -->
+          <div class="heroText">
+              <h4 class="headerSmall mb-2">Hello! My name is Brian Teeters</h4>
+              <!--  <h1 class="headerLarge">FULL-STACK</h1>  -->
+              <h1 class="headerLarge">DEVELOPER</h1>
+              <h1 class="headerLarge">& DESIGNER</h1>
+          </div>
+      </div> 
+
+      <!-- Work Section -->
+      <div id="works" class="container pt-5">
+        <h1 class="row justify-content-center pt-5 pb-5 sectionHead">Some of My Projects</h1>
+
+        <!-- Project 1 -->
+        <div class="container my-5">
+          <div class="row projectLayout justify-content-center project pb-5">
+            <div class="col-md-4">
+              <div class="pb-3 sectionHeadB text-center text-md-start">
+                <h3 class="sectionHeadB text-center text-md-start">Python Discovery Exercises</h3>
+              </div>
+              <div class="p-3 mb-3" style="background-color: #070012;">
+                A collection of small Python programs used to both learn and practice the language.
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-4 col-3">
+                  <!-- vv ADD GITHUB LINK FOR PYTHON PROJECTS HERE vv -->
+                  <a href="" target="_blank" class="mt-2 me-4">
+                    <img class="col-12" src="/img/github.png" alt="GitHub">
+                  </a>
+                </div>
+                <div class="col-md-7 col-6 align-items-center">
+                  <!-- Button trigger modal -->
+                  <div class="d-flex justify-content-center mt-3">
+                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2" data-mdb-toggle="modal" data-mdb-target="#project1Modal" data-mdb-ripple-color="light">
+                      Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="py-3 text-center">
+                Knowledge Used: Python
+              </div>
+            </div>
+            <div class="col-md-7 mb-4 px-0" id="projectImg1">
+              <img id="mobileImg1"class="col-12"src="/img/futuristic-g7092fa130_1920.jpg" alt="">
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #070012;">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="ModalLabel">Python Discovery Exercises</h4>
+                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
+                    </div>
+
+                    <div class="modal-body">
+                      <p style="font-size: 1em;">
+                        This collection of small programs and exercises was created to
+                        experiment with and expand my knowledge of Python. This collection 
+                        includes ______. The code can be found using the GitHub icon on 
+                        the main page or by clicking <a href=""><b><i>here.</i></b></a>
+                      </p>
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                      <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="container my-5">
+          <div class="row projectLayout justify-content-center project pb-5">
+            <div class="col-md-4">
+              <div class="pb-3 sectionHeadB text-center text-md-start">
+                <h3 class="sectionHeadB text-center text-md-start">C# Discovery Exercises</h3>
+              </div>
+              <div class="p-3 mb-3" style="background-color: #070012;">
+                A collection of small C# programs used to both learn and practice the language.
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-4 col-3">
+                  <!-- vv ADD GITHUB LINK FOR PYTHON PROJECTS HERE vv -->
+                  <a href="" target="_blank" class="mt-2 me-4">
+                    <img class="col-12" src="/img/github.png" alt="GitHub">
+                  </a>
+                </div>
+                <div class="col-md-7 col-6 align-items-center">
+                  <!-- Button trigger modal -->
+                  <div class="d-flex justify-content-center mt-3">
+                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2" data-mdb-toggle="modal" data-mdb-target="#project2Modal" data-mdb-ripple-color="light">
+                      Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="py-3 text-center">
+                Knowledge Used: C#
+              </div>
+            </div>
+            <div class="col-md-7 mb-4 px-0" id="projectImg2">
+              <img id="mobileImg2"class="col-12" src="/img/hd-wallpaper-g228322b07_1920.jpg" alt="">
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #070012;">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="ModalLabel">C# Discovery Exercises</h4>
+                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
+                    </div>
+
+                    <div class="modal-body">
+                      <p style="font-size: 1em;">
+                        This collection of small programs and exercises was created to
+                        experiment with and expand my knowledge of C#. This collection 
+                        includes ______. The code can be found using the GitHub icon on 
+                        the main page or by clicking <a href=""><b><i>here.</i></b></a>
+                      </p>
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                      <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="container my-5">
+          <div class="row projectLayout justify-content-center project">
+            <div class="col-md-4">
+              <div class="pb-3 sectionHeadB text-center text-md-start">
+                <h3 class="sectionHeadB text-center text-md-start">Tough Mudder Mobile Website Redesign</h3>
+              </div>
+              <div class="p-3 mb-3" style="background-color: #070012;">
+                I wanted to make the Tough Mudder website easier to navigate. 
+                I prioritized making links obvious as to where it would lead 
+                and the information that would be available on the page.
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-4 col-3">
+                  <!-- vv ADD GITHUB LINK FOR PYTHON PROJECTS HERE vv -->
+                  <a href="https://xd.adobe.com/view/4eff75d1-a463-4755-a436-6658b4309afb-1bac/?fullscreen" target="_blank" class="mt-2 me-4">
+                    <img class="col-12" src="/img/adobe_xd_logo.png" alt="GitHub">
+                  </a>
+                </div>
+                <div class="col-md-7 col-6 align-items-center">
+                  <!-- Button trigger modal -->
+                  <div class="d-flex justify-content-center mt-3">
+                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2" data-mdb-toggle="modal" data-mdb-target="#project3Modal" data-mdb-ripple-color="light">
+                      Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="py-3 text-center">
+                Knowledge Used: Adobe Xd, UX/UI Practices
+              </div>
+            </div>
+            <div class="col-md-7 mb-4 px-0" id="projectImg3">
+              <img id="mobileImg3"class="col-12" src="/img/TM_MobileMockup.jpg" alt="">
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #070012;">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="ModalLabel">Tough Mudder Mobile Website Redesign</h4>
+                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
+                    </div>
+
+                    <div class="modal-body">
+                      <p style="font-size: 1em;">
+                        This class project idea came from the repeated, personal, use of the Tough Mudder website. 
+                        I have had trouble finding specific information on races, events, or just Tough 
+                        Mudder news in the past. With this in mind, I wanted to make the information that is currently 
+                        available on the website more easily found as some of the links were not obvious or just did not lead to 
+                        where the user expected. The task was to only create a mobile version and 
+                        unfortunately that is all that the course time allowed for. However, I was able to implement hover states 
+                        and various other things that would be more geared for the tablet and desktop variations.
+                      </p>
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                      <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Section -->
+      <div id="about" class="container pt-5 ps-3 pe-3">
+        <h1 class="row justify-content-center pt-5 pb-5 ps-4 pe-4 sectionHead">A Little About Myself</h1>
+      </div>
+
+      <!-- Experience Accordion -->
+      <div class="container col-md-10 col-lg-7">
+        <div class="accordion" id="expAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Ivy Tech
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#expAccordion">
+              <div class="accordion-body">
+                <h5>Anticipated Graduation: Fall 2023</h5>
+                <p>Associate's of Applied Science in Software Development</p>
+                <ul>
+                  <li>Development courses covering a range of languages including Python, JavaScript, C#, and more</li>
+                  <li>Courses covering best practices for UX/UI and database management/creation</li>
+                  <li>Worked with teams via group projects, utilizing GitHub to share and collaborate</li>
+                  <li>Basic knowledge of AWS architecture and offered products/uses</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                EZAdsPro
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-mdb-parent="#expAccordion">
+              <div class="accordion-body">
+                <h5>Dec. 2017 - Present</h5>
+                <p>Graphic Designer (Independent Contractor since Mar. 2023)</p>
+                <ul>
+                  <li>Created stand out advertisements for individual clients and franchised magazines across the US and Canada</li>
+                  <li>Maintained brandings and updated ads to resemble changing markets and availabilities</li>
+                  <li>Worked within timelines and specified guidlines to get books to press in a timely and correct manner</li>
+                  <li>Converted designed ads from print to digital or vice versa to provide the maximum exposure for clients</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Our Sunday Visitor
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-mdb-parent="#expAccordion">
+              <div class="accordion-body">
+                <h5>May 2017 - Nov. 2017</h5>
+                <p>Graphic Designer (Temp. Position)</p>
+                <ul>
+                  <li>Designed ads, pamphlets, newsletters, and more print and digital materials (some of which are still in use)</li>
+                  <li>Worked with both in-house and third party clients to produce ads and marketing materials that met requested needs</li>
+                  <li>Worked within deadlines and guidlines simultaneously to get designs created and approved in a timely manner</li>
+                  <li>Balanced time between projects as changes came back or new tasks were assigned by Senior Lead</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Ball State University
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-mdb-parent="#expAccordion">
+              <div class="accordion-body">
+                <h5>May 2017</h5>
+                <p>BFA in Visual Communication</p>
+                <ul>
+                  <li>Graphic design courses focusing on logo and branding as well as conceptual design</li>
+                  <li>Took all web design courses available to gain the most exposure possible to HTML, CSS, and JavaScript</li>
+                  <li>Fine Art courses such as drawing, painting, glass-blowing/neon, multi-media and photography</li>
+                </ul>
+                <p>Minor in Marketing</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                Our Sunday Visitor
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-mdb-parent="#expAccordion">
+              <div class="accordion-body">
+                <h5>May 2016 - Aug. 2016</h5>
+                <p>Design Department Intern</p>
+                <ul>
+                  <li>Responsible for digital restoration and archival of +35 years of artwork</li>
+                  <li>Used Adobe programs to color correct, crop and enhance both hand made and digital art</li>
+                  <li>Worked within deadlines to properly lable, sort, and store artwork based on both contents and copyrights</li>
+                  <li>Reduced file sizes without quality loss to help streamline process for both usage and storing purposes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Mobile Bio Section -->
+      <div class="mt-5 container col-md-12 justify-content-center pb-5" id="bioPhoto">
+        <div class="row justify-content-center">
+          <div class="card col-10 bg-transparent">
+            <div class="bg-image">
+              <div id="personalPhoto" class="img-fluid rounded-6">
+              </div> 
+            </div>
+          </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <div class="row justify-content-center">
+          <button type="button" class="btn btn-outline-light col-7 buttonText" data-mdb-toggle="modal" data-mdb-target="#BioModal">
+            Read More About Me
+          </button>
+        </div>
+            
+        <!-- Modal -->
+        <div class="modal fade" id="BioModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content" style="background-color: #070012;">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="ModalLabel">I Am Brian Teeters</h4>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
+                  </div>
+
+                  <div class="modal-body">
+                    <p style="font-size: 1em;">
+                        Growing up art had a significant influence on my life.
+                        I found that I could get lost for hours experimenting with colors, patterns, and 
+                        shapes and pairing them together in unexpected ways. Through this, my 
+                        career path as a graphic designer started.
+                        <br><br>
+                        After having been in the field for a number of years, I began to want something
+                        involving more of a challenge. I wanted to engage both sides of my brain, logical and creative.
+                        During college I had some classes dealing with web design and coding and enjoyed those thoroughly.
+                        Realizing this I decided to persue a degree in software development to expand my skill set.
+                        Keeping a creative outlet has always been important to me and the career shift allows me to
+                        add the challenge and logical engagement I have been looking for.
+                        <br><br>
+                        As a developer, designer, and artist I always enjoy being able to insert a part 
+                        of my personality into each project. My goal is to open the door for an interaction 
+                        with the user. I create with the purpose of impacting the lives of those around me with my 
+                        work as well as meeting the needs of the end-user, and client alike through clear and 
+                        well thought out design.
+                    </p>
+                  </div>
+
+                  <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Tablet & Desktop Bio Section -->
+      <div id="largeBio">
+        <div class="container mt-5 pt-3">
+          <div class="row justify-content-center">
+            <div class="col-md-7 col-lg-6 p-3" style="background-color: #070012;">
+              <h4 class="sectionHeadB mb-3 ps-lg-3">I Am Brian Teeters</h4>
+              <p class="pe-md-2 ps-lg-3 pe-lg-3">
+                Growing up art had a significant influence on my life.
+                I found that I could get lost for hours experimenting with colors, patterns, and 
+                shapes and pairing them together in unexpected ways. Through this, my 
+                career path as a graphic designer started.
+                <br><br>
+                After having been in the field for a number of years, I began to want something
+                involving more of a challenge. I wanted to engage both sides of my brain, logical and creative.
+                During college I had some classes dealing with web design and coding and enjoyed those thoroughly.
+                Realizing this I decided to persue a degree in software development to expand my skill set.
+                Keeping a creative outlet has always been important to me and the career shift allows me to
+                add the challenge and logical engagement I have been looking for.
+                <br><br>
+                As a developer, designer, and artist I always enjoy being able to insert a part 
+                of my personality into each project. My goal is to open the door for an interaction 
+                with the user. I create with the purpose of impacting the lives of those around me with my 
+                work as well as meeting the needs of the end-user, and client alike through clear and 
+                well thought out design.
+            </p>
+            </div>
+            <div id="largeBioPic" class="col-md-5 col-lg-3"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div id="contact" class="container pt-5">
+        <h1 class="row justify-content-center sectionHead pt-5 pb-5 ps-4 pe-4">Want to Get in Touch?</h1>
+        <div class="row justify-content-center">
+          <p class="col-9 col-lg-8 text-center" id="boldText">
+            <b>I am looking for new opportunities!</b>
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <p class="col-10 col-lg-8 text-center">
+            I would be happy to have a conversation about anything you're 
+            needing and establish if it is a right fit.
+            <br><br>
+            If you have questions, 
+            a potential opportunity, or even just want to have a friendly chat, 
+            please don't hesitate to reach out and I'll respond as soon as I can.
+            <br><br>
+            You can reach me at BrianTeetersDesign@gmail.com<br>or by using the button below.
+        </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <button class="btn btn-outline-light col-md-3 col-5 mt-3">
+            <a class="buttonText" href="mailto:brianteetersdesign@gmail.com" target="_blank">Contact Me</a>
+          </button>
+        </div>
+
+      </div>
+
+  </main>
+
+  <footer id="footer" class="p-4">
+      <a href="https://github.com/bateeters" target="_blank">Designed & Built by Brian Teeters</a>
+  </footer>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/custom.js"></script>
+
+  </body>
+</html>
