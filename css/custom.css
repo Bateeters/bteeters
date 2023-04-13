@@ -263,6 +263,12 @@ a:hover{
     background-position: center;
 }
 
+#rainbowBakeryImg{
+    background-image: url(../img/rainbowBakery.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 #pythonCollectionImg{
     background-image: url(../img/pythonProgramCollectionMockup.jpg);
     background-size: cover;
@@ -378,6 +384,10 @@ footer{
     }
 
     #mobileImg1{
+        visibility: hidden;
+    }
+
+    #mobileRainbowBakeryImg{
         visibility: hidden;
     }
 
