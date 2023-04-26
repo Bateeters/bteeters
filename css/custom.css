@@ -263,6 +263,12 @@ a:hover{
     background-position: center;
 }
 
+#todoListImg{
+    background-image: url(../img/todoListMockup.png);
+    background-size: cover;
+    background-position: center;
+}
+
 #rainbowBakeryImg{
     background-image: url(../img/rainbowBakery.jpg);
     background-size: cover;
@@ -384,6 +390,10 @@ footer{
     }
 
     #mobileImg1{
+        visibility: hidden;
+    }
+
+    #mobileTodoListImg{
         visibility: hidden;
     }
 

@@ -70,7 +70,73 @@
       <div id="works" class="container pt-5">
         <h1 class="row justify-content-center pt-5 pb-5 sectionHead">Some of My Projects</h1>
 
-        <!-- Project 1 -->
+        <!-- Project -->
+        <div class="container my-5">
+          <div class="row projectLayout justify-content-center project pb-5">
+            <div class="col-md-4">
+              <div class="pb-3 sectionHeadB text-center text-md-start">
+                <h3 class="sectionHeadB text-center text-md-start">To-Do List</h3>
+              </div>
+              <div class="p-3 mb-3" style="background-color: #070012;">
+                A personal project utilizing python (django) building a web application to keep track of a specific user's tasks.
+              </div>
+              <div class="row justify-content-center align-items-center">
+                <div class="col-md-4 col-3">
+                  <!-- vv GITHUB LINK FOR PROJECT HERE vv -->
+                  <a href="https://github.com/Bateeters/todo_list" target="_blank" class="mt-2 me-4">
+                    <img class="col-12" src="./img/github.png" alt="GitHub">
+                  </a>
+                </div>
+                <div class="col-md-7 col-6 align-items-center">
+                  <!-- Button trigger modal -->
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2" data-mdb-toggle="modal" data-mdb-target="#todoListModal" data-mdb-ripple-color="light">
+                      Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="py-3 text-center">
+                Knowledge Used: Python (django)
+              </div>
+            </div>
+            <div class="col-md-7 mb-4 px-0" id="todoListImg">
+              <img id="mobileTodoListImg"class="col-12"src="./img/todoListMockup.png" alt="">
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="todoListModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #070012;">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="ModalLabel">To-Do List</h4>
+                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
+                    </div>
+
+                    <div class="modal-body">
+                      <p style="font-size: 1em;">
+                        This project was something I wanted to do because it utilized django's login and database functionalities. 
+                        I removed the password restrictions to make creating a username/password faster and easier strictly for demonstration 
+                        and testing purposes only (usernames are case sensitive when logging in). Once logged in you will be able to 
+                        create, read, update, and delete (CRUD) the tasks that are specific to you and only you.
+                        <br><br>
+                        The code can be found using the GitHub icon on the main page or by clicking 
+                        <a href="https://github.com/Bateeters/todo_list" target="_blank">
+                          <b><i>here.</i></b>
+                        </a>
+                      </p>
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                      <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Project -->
         <div class="container my-5">
           <div class="row projectLayout justify-content-center project pb-5">
             <div class="col-md-4">
@@ -122,7 +188,7 @@
                         total cost display functionality as well.
                         <br><br>
                         The code can be found using the GitHub icon on the main page or by clicking 
-                        <a href="https://github.com/Bateeters/rainbowBakeryApp">
+                        <a href="https://github.com/Bateeters/rainbowBakeryApp" target="_blank">
                           <b><i>here.</i></b>
                         </a>
                       </p>
@@ -136,7 +202,7 @@
           </div>
         </div>
 
-        <!-- Project 2 -->
+        <!-- Project -->
         <div class="container my-5">
           <div class="row projectLayout justify-content-center project pb-5">
             <div class="col-md-4">
@@ -190,7 +256,7 @@
                         viewer app utilizing pysimplegui.<br><br>I will keep adding to this collection as I create and experiment 
                         more with the Python language.
                         The code can be found using the GitHub icon on the main page or by clicking 
-                        <a href="https://github.com/Bateeters/pythonProjectCollection">
+                        <a href="https://github.com/Bateeters/pythonProjectCollection" target="_blank">
                           <b><i>here.</i></b>
                         </a>
                       </p>
@@ -270,7 +336,7 @@
         </div>
         -->
 
-        <!-- Project 4 -->
+        <!-- Project -->
         <div class="container my-5">
           <div class="row projectLayout justify-content-center project">
             <div class="col-md-4">
