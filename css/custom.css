@@ -257,14 +257,14 @@ a:hover{
     flex-direction: column-reverse;
 }
 
-#projectImg1{
-    background-image: url(../img/futuristic-g7092fa130_1920.jpg);
+#todoListImg{
+    background-image: url(../img/todoListMockup.png);
     background-size: cover;
     background-position: center;
 }
 
-#todoListImg{
-    background-image: url(../img/todoListMockup.png);
+#zodiacImg{
+    background-image: url(../img/zodiac.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -281,13 +281,7 @@ a:hover{
     background-position: center;
 }
 
-#projectImg2{
-    background-image: url(../img/hd-wallpaper-g228322b07_1920.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#projectImg3{
+#tmProjectImg{
     background-image: url(../img/TM_MobileMockupLarge.jpg);
     background-size: cover;
     background-position: center;
@@ -389,11 +383,11 @@ footer{
         flex-direction: initial;
     }
 
-    #mobileImg1{
+    #mobileTodoListImg{
         visibility: hidden;
     }
 
-    #mobileTodoListImg{
+    #mobileZodiacImg{
         visibility: hidden;
     }
 
@@ -405,11 +399,7 @@ footer{
         visibility: hidden;
     }
 
-    #mobileImg2{
-        visibility: hidden;
-    }
-
-    #mobileImg3{
+    #tmMobileImg{
         visibility: hidden;
     }
 
