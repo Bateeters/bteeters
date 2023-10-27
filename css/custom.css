@@ -257,6 +257,12 @@ a:hover{
     flex-direction: column-reverse;
 }
 
+#AlienInvasionImg{
+    background-image: url(../img/Alien_Invasion.png);
+    background-size: cover;
+    background-position: center;
+}
+
 #todoListImg{
     background-image: url(../img/todoListMockup.png);
     background-size: cover;
@@ -381,6 +387,10 @@ footer{
 
     .projectLayout{
         flex-direction: initial;
+    }
+
+    #mobileAlienInvasionImg{
+        visibility: hidden;
     }
 
     #mobileTodoListImg{
