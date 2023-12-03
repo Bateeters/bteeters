@@ -259,7 +259,8 @@ a:hover{
 
 #AlienInvasionImg{
     background-image: url(../img/Alien_Invasion.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
