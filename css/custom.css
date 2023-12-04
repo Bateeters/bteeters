@@ -275,6 +275,12 @@ a:hover{
     background-position: center;
 }
 
+#cookbookImg{
+    background-image: url(../img/CookMark.png);
+    background-size: cover;
+    background-position: center;
+}
+
 #rainbowBakeryImg{
     background-image: url(../img/rainbowBakery.jpg);
     background-size: cover;
@@ -398,6 +404,10 @@ footer{
     }
 
     #mobileZodiacImg{
+        visibility: hidden;
+    }
+
+    #mobileCookbookImg{
         visibility: hidden;
     }
 
