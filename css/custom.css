@@ -51,147 +51,149 @@ a:hover{
     text-shadow: 0px 0px 5px #070012;
 }
 
-    /* CSS for Mobile Side Nav Menu */
-    .mobileMenuOpen{
-        color: white;
-    }
+/* ----------- CSS for Mobile Side Nav Menu ------------- */
+.mobileMenuOpen{
+    color: white;
+}
 
-    .mobileMenuOpen:hover {
-        color:peachpuff;
-    }
+.mobileMenuOpen:hover {
+    color:peachpuff;
+}
 
-    #sideMenu {
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 250px;
-        margin-top: 0px;
-        transform: translateX(250px);
-        transition: transform 250ms ease-in-out;
-        background: #070012;
-        z-index: 1;
-    }
-    
-    .sideMenuInner {
-        font-family: 'Playfair Display', serif !important; 
-        margin: 40px 0 0 0;
-        padding: 0;
-    }
-    
-    .sideMenuInner li {
-        list-style: none;
-        color: #fff;
-        font-size: 1.25em;
-        font-weight: bold;
-        padding: 20px;
-        cursor: pointer;
-    }
-    
-    .sideMenuInner li span {
-        display: block;
-        font-size: 14px;
-        color: rgba(255, 255, 255, 0.50);
-    }
-    
-    .sideMenuInner li a {
-        color: #fff;
-        font-weight: bold;
-        cursor: pointer;
-        text-decoration: none;
-    }
+#sideMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    margin-top: 0px;
+    transform: translateX(250px);
+    transition: transform 250ms ease-in-out;
+    background: #070012;
+    z-index: 1;
+}
 
-    .sideMenuInner li a:hover{
-        color: peachpuff;
-    }
-    
-    input[type="checkbox"]:checked~#sideMenu {
-        transform: translateX(0);
-    }
-    
-    input[type=checkbox] {
-        transition: all 0.3s;
-        box-sizing: border-box;
-        display: none;
-    }
-    
-    .sideIconToggle {
-        transition: all 0.3s;
-        box-sizing: border-box;
-        cursor: pointer;
-        position: absolute;
-        z-index: 99;
-        height: 100%;
-        width: 100%;
-        top: 34%;
-        right: 9%;
-        height: 22px;
-        width: 22px;
-    }
-    
-    .spinner {
-        transition: all 0.3s;
-        box-sizing: border-box;
-        position: absolute;
-        height: 3px;
-        width: 100%;
-        background-color: #fff;
-    }
-    
-    .horizontal {
-        transition: all 0.3s;
-        box-sizing: border-box;
-        position: relative;
-        float: left;
-        margin-top: 3px;
-    }
-    
-    .diagonal.part-1 {
-        position: relative;
-        transition: all 0.3s;
-        box-sizing: border-box;
-        float: left;
-    }
-    
-    .diagonal.part-2 {
-        transition: all 0.3s;
-        box-sizing: border-box;
-        position: relative;
-        float: left;
-        margin-top: 3px;
-    }
-    
-    input[type=checkbox]:checked~.sideIconToggle>.horizontal {
-        transition: all 0.3s;
-        box-sizing: border-box;
-        opacity: 0;
-    }
-    
-    input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-1 {
-        transition: all 0.3s;
-        box-sizing: border-box;
-        transform: rotate(135deg);
-        margin-top: 8px;
-    }
-    
-    input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
-        transition: all 0.3s;
-        box-sizing: border-box;
-        transform: rotate(-135deg);
-        margin-top: -9px;
-    }
-    
-    #sidenav-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        background: rgba(0, 0, 0, .1);
-        cursor: pointer;
-        z-index: 1;
-    }
+.sideMenuInner {
+    font-family: 'Playfair Display', serif !important; 
+    margin: 40px 0 0 0;
+    padding: 0;
+}
 
+.sideMenuInner li {
+    list-style: none;
+    color: #fff;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.sideMenuInner li span {
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.sideMenuInner li a {
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sideMenuInner li a:hover{
+    color: peachpuff;
+}
+
+input[type="checkbox"]:checked~#sideMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+
+.sideIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 34%;
+    right: 9%;
+    height: 22px;
+    width: 22px;
+}
+
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+input[type=checkbox]:checked~.sideIconToggle>.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+
+input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+#sidenav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, .1);
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+/* ---------------------- Nav Bar CSS ----------------- */
 .navGroup{
     display: none;
     list-style: none;
@@ -207,6 +209,7 @@ a:hover{
     text-shadow: 0px 0px 5px #070012;
 }
 
+/* ----------------- Large Header Image & Text CSS ---------------------- */
 .hero{
     display: flex;
     align-items: flex-end;
@@ -346,7 +349,6 @@ a:hover{
     font-size: 6.75vw;
 }
 
-
 footer{
     font-family: 'Playfair Display', serif;
     background: #070012;
@@ -356,6 +358,12 @@ footer{
     align-items: center;
     justify-content: center;
 }
+
+.designProjectItem{
+    border: 1px solid peachpuff;
+    border-radius: 10px;
+}
+
 
 @media screen and (min-width: 768px) {
 
