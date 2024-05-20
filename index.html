@@ -50,7 +50,7 @@
             <div id="sideMenu">
               <ul class="sideMenuInner">
                 <li class="active" onclick="hideSidebar()"><a href="#works" data-toggle="tab">Development</a></li>
-                <li onclick="hideSidebar()"><a href="design.html" data-toggle="tab">Design</a></li>
+                <li onclick="hideSidebar()"><a href="#design" data-toggle="tab">Design</a></li>
                 <li onclick="hideSidebar()"><a href="#about" data-toggle="tab">About</a></li>
                 <li onclick="hideSidebar()"><a href="#contact" data-toggle="tab">Contact</a></li>
               </ul>
@@ -73,10 +73,120 @@
       <!-- Work Section -->
       <div id="works" class="container pt-5">
         <h1 class="row justify-content-center pt-5 pb-5 sectionHead">Development Work</h1>
-        <h3 class="text-center text-md">Below you will find a collection of larger project examples I have decided to showcase. 
-            More examples, such as smaller projects and code snippets, are available on my GitHub 
-            <a href="https://github.com/Bateeters?tab=repositories">here</a>.</h3>
+        <h3 class="text-center text-md">
+          Below, you will find a collection of larger project examples I have decided to showcase.
+          <br>I have tried to separate them by front-end and back-end focused.
+          <br>However, some projects may overlap in languages and technologies. 
+          <br><br>
+          More examples, such as smaller projects and code snippets, are available on my GitHub 
+          <a href="https://github.com/Bateeters?tab=repositories">here</a>.
+        </h3>
 
+        <!-- FRONT-END FOCUSED SECTION-->
+        <h3 class="row justify-content-center pt-5 pb-5 sectionHeadB">Front-End Focused</h3>
+
+        <!-- Project: Etch-A-Sketch -->
+        <div class="container my-5">
+          <div class="row projectLayout justify-content-center project pb-5">
+            <div class="col-md-4">
+              <div class="pb-3 sectionHeadB text-center text-md-start">
+                <h3 class="sectionHeadB text-center text-md-start">Etch-A-Sketch</h3>
+              </div>
+              <div class="p-3 mb-3" style="background-color: #070012;">
+                In this project, I created a browser-based sketchpad similar to an 
+                Etch-A-Sketch to practice my DOM manipulation skills. I used JavaScript 
+                to generate a grid of div elements and Flexbox to style them. Users can 
+                draw by hovering over the grid squares, and a button allows them to reset 
+                the grid size. I also decided to add effects like random colors and 
+                progressive darkening on each square interaction.
+              </div>
+              <div class="row justify-content-center align-items-center">
+
+                <div class="col-md-4 col-3 pt-3">
+                  <!-- vv GITHUB LINK FOR PROJECT HERE vv -->
+                  <a href="https://github.com/Bateeters/Etch-A-Sketch" target="_blank" class="mt-2 me-4">
+                    <img class="col-12" src="./img/github.png" alt="GitHub">
+                  </a>
+                </div>
+
+                <div class="col-md-7 col-6 align-items-center">
+                  <!-- Button trigger modal -->
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2" data-mdb-toggle="modal" data-mdb-target="#etchSketchModal" data-mdb-ripple-color="light">
+                      Details
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col-md-8 align-items-center py-4">
+                  <!-- GitHub Pages Link -->
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2"  data-mdb-ripple-color="light">
+                      <a href="https://bateeters.github.io/Etch-A-Sketch/" target="_blank">Live GitHub Page</a>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+              <div class="py-3 text-center">
+                Knowledge Used: JavaScript & DOM Manipulation,<br>HTML, CSS
+              </div>
+            </div>
+            <div class="col-md-7 mb-4 px-0" id="etchSketchImg">
+              <img id="tmMobileImg"class="col-12" src="./img/etch_a_sketch.png" alt="">
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="etchSketchModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #070012;">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="ModalLabel">Etch-A-Sketch</h4>
+                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
+                    </div>
+
+                    <div class="modal-body">
+                      <p style="font-size: 1em;">
+                        In this project, I set out to build an interactive web-based sketchpad 
+                        inspired by the classic Etch-A-Sketch toy, aiming to practice and showcase 
+                        my DOM manipulation and Flexbox layout skills. My objective was to create 
+                        a browser version of a sketchpad using JavaScript and Flexbox.
+                        <br><br>
+                        I used JavaScript to dynamically generate a 16x16 grid of square div 
+                        elements within a container div. I applied Flexbox to display them as a grid, 
+                        ensuring a clean and responsive design. For the drawing feature, I used 
+                        a hover effect that changes the color of the grid squares as the mouse 
+                        passes over them, allowing users to draw. Additionally, I added a button that 
+                        lets the user resize the grid, clearing and resizing the grid accordingly while 
+                        keeping a total width.
+                        <br><br>
+                        I enhanced the project by making each grid square change to a random color upon 
+                        interaction and implementing a feature where each interaction with a square 
+                        darkens its color by 10%, achieving a full color square after ten interactions.
+                        <br><br>
+                        This project not only highlights my technical skills but also demonstrates 
+                        my ability to solve problems, research new methods, and create engaging user experiences.
+                        <br><br>
+                        The code can be found using the GitHub icon on the main page or by clicking 
+                        <a href="https://github.com/Bateeters/Etch-A-Sketch" target="_blank">
+                          <b><i>here.</i></b>
+                        </a>
+                        <br><br>
+                        If you would like to try this out for yourself, a live version of it can be found 
+                        <a href="https://bateeters.github.io/Etch-A-Sketch/" target="_blank">
+                          <b><i>here.</i></b>
+                        </a>
+                      </p>
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                      <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
 
         <!-- Project: TM mobile UX/UI -->
         <div class="container my-5">
@@ -169,6 +279,9 @@
               </div>
           </div>
         </div>
+
+        <!-- BACK-END FOCUSED SECTION-->
+        <h3 class="row justify-content-center pt-5 pb-5 sectionHeadB">Back-End Focused</h3>
 
         <!-- Project: To-Do List -->
         <div class="container my-5">
@@ -453,82 +566,331 @@
               </div>
           </div>
         </div>
+      </div>
 
-        <!-- Project: Rainbow Bakery -->
-        <!--
-        <div class="container my-5">
-          <div class="row projectLayout justify-content-center project pb-5">
-            <div class="col-md-4">
-              <div class="pb-3 sectionHeadB text-center text-md-start">
-                <h3 class="sectionHeadB text-center text-md-start">Rainbow Bakery Kiosk App</h3>
-              </div>
-              <div class="p-3 mb-3" style="background-color: #070012;">
-                A class group project utilizing python (django) to build a web application for a designated company/business.
-              </div>
-              <div class="row justify-content-center align-items-center">
-                <div class="col-md-4 col-3">
+      <!-- Design Section -->
+      <div class="container pt-5" id="design">
+        <h1 class="justify-content-center pt-5 pb-5 sectionHead">Design Work</h1>
+        <div id="designProjectList" class="row justify-content-center">
 
-                  
-                  vv GITHUB LINK FOR PROJECT HERE vv
-                    
-                  <a href="https://github.com/Bateeters/rainbowBakeryApp" target="_blank" class="mt-2 me-4">
-                    <img class="col-12" src="./img/github.png" alt="GitHub">
-                  </a>
+            <!-- EZAdsPro -->        
+            <div class="col-md-5 designProjectItem p-3 m-5">
+                <div class="">
+                    <div class="">
+                        <div class="">
+                            <h3 class="sectionHeadB text-center text-md-start">EZAdsPro</h3>
+                        </div>
+                        <div class="p-3 mb-3" style="background-color: #070012;">
+                            My experience at EZAdsPro included working very closely with both team members and clients. This 
+                            included designing advertisements for both web and print, communicating with both clients and the
+                            in-house team, as well as finalizing print materials for production purposes.
+                        </div>
+                        <div class="">
+                            <!-- Button trigger modal -->
+                            <div class="d-flex justify-content-center">
+                                <button type="button" 
+                                class="btn btn-outline-light buttonText py-2 my-2" 
+                                data-mdb-toggle="modal" 
+                                data-mdb-target="#ezadsModal" 
+                                data-mdb-ripple-color="light">
+                                See Work
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-7 col-6 align-items-center">
+            </div>
 
-
-                 Button trigger modal
-
-                  <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light buttonText py-2 my-2" data-mdb-toggle="modal" data-mdb-target="#project1Modal" data-mdb-ripple-color="light">
-                      Details
-                    </button>
-                  </div>
+            <!-- Our Sunday Visitor -->        
+            <div class="col-md-5 designProjectItem p-3 m-5">
+                <div class="">
+                    <div class="">
+                        <div class="pb-3">
+                            <h3 class="sectionHeadB text-center text-md-start">Our Sunday Visitor</h3>
+                        </div>
+                        <div class="p-3 mb-3" style="background-color: #070012;">
+                            During my time at Our Sunday Visitor, Inc. I worked very closely 
+                            with the marketing team. This included various jobs such as designing 
+                            business to business promotional sales pieces, pamphlets and ads 
+                            for books, third-party ads and more for both print and digital channels.                    
+                        </div>
+                        <div class="">
+                            <!-- Button trigger modal -->
+                            <div class="d-flex justify-content-center">
+                                <button type="button" 
+                                class="btn btn-outline-light buttonText py-2 my-2" 
+                                data-mdb-toggle="modal" 
+                                data-mdb-target="#osvModal" 
+                                data-mdb-ripple-color="light">
+                                See Work
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="py-3 text-center">
-                Knowledge Used: Python (django), HTML, CSS
-              </div>
             </div>
-            <div class="col-md-7 mb-4 px-0" id="rainbowBakeryImg">
-              <img id="mobileRainbowBakeryImg"class="col-12"src="./img/rainbowBakery.jpg" alt="">
+
+            <!-- Elemental Supplements -->        
+            <div class="col-md-5 designProjectItem p-3 m-5">
+                <div class="">
+                    <div class="">
+                        <div class="">
+                            <h3 class="sectionHeadB text-center text-md-start">Elemental Supplements</h3>
+                        </div>
+                        <div class="p-3 mb-3" style="background-color: #070012;">
+                            Being healthy can be achieved in many ways but most of them revolve around the idea of nutrition. 
+                            When looking into this, it is shown that eating whole foods and staying away from heavily processed 
+                            items is most beneficial. It seems that every product available on the market doesn't reflect this idea.
+                            The concept of Elemental Real Food Supplements is to bridge that gap and to get as close to natural 
+                            whole foods as you possibly can with supplements.
+                        </div>
+                        <div class="">
+                            <!-- Button trigger modal -->
+                            <div class="d-flex justify-content-center">
+                                <button type="button" 
+                                class="btn btn-outline-light buttonText py-2 my-2" 
+                                data-mdb-toggle="modal" 
+                                data-mdb-target="#elementalModal" 
+                                data-mdb-ripple-color="light">
+                                See Work
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
 
-
-          Modal
-
-          <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
+            <!-- YumYum Boards -->        
+            <div class="col-md-5 designProjectItem p-3 m-5">
+                <div class="">
+                    <div class="">
+                        <div class="pb-3">
+                            <h3 class="sectionHeadB text-center text-md-start">YumYum Boards</h3>
+                        </div>
+                        <div class="p-3 mb-3" style="background-color: #070012;">
+                            Skateboards have always had a draw to me. After attempting, and failing, to learn 
+                            to ride them I gave up but just couldn't get rid of them. I realized that the designs 
+                            each had were specific and reflective of the idividual who rode it. I enjoyed looking 
+                            through each and realized that board art could be a great outlet for my illustrative, 
+                            less refined and polished side of design. YumYum Boards is a collection of some of those 
+                            designs as well as a branding project.                   
+                        </div>
+                        <div class="">
+                            <!-- Button trigger modal -->
+                            <div class="d-flex justify-content-center">
+                                <button type="button" 
+                                class="btn btn-outline-light buttonText py-2 my-2" 
+                                data-mdb-toggle="modal" 
+                                data-mdb-target="#yumyumModal" 
+                                data-mdb-ripple-color="light">
+                                See Work
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- EZAdsPro Modal --> 
+        <div class="modal fade" id="ezadsModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
                 <div class="modal-content" style="background-color: #070012;">
                     <div class="modal-header">
-                      <h4 class="modal-title" id="ModalLabel">Rainbow Bakery Kiosk App</h4>
-                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
+                    <h4 class="modal-title" id="ModalLabel">EZAdsPro Work Examples</h4>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
                     </div>
 
                     <div class="modal-body">
-                      <p style="font-size: 1em;">
-                        This group project was assigned to introduce django. We were tasked to create a web-based 
-                        application for a business of our choosing. I took on the tasks of creating the GUI and
-                        setting up the django views. I also set up the login, add/remove/update item(s), and 
-                        total cost display functionality as well.
-                        <br><br>
-                        The code can be found using the GitHub icon on the main page or by clicking 
-                        <a href="https://github.com/Bateeters/rainbowBakeryApp" target="_blank">
-                          <b><i>here.</i></b>
-                        </a>
-                      </p>
+                        <p style="font-size: 1em;">
+                            <h4>Click Images to Enlarge</h4>
+                            <br>
+                            First-Party Service Promotion:
+                            <a href="img/EZAds/Flyer_1.pdf" target="_blank">
+                                <img class="col-12" src="img/EZAds/Flyer_1.jpg">
+                            </a>
+                            <br><br><br>
+                            Third-Party Real Estate Advertisements:
+                            <a href="img/EZAds/Custom_3.pdf" target="_blank">
+                                <img class="col-12" src="img/EZAds/Custom_3.jpg">
+                            </a>
+                            <br><br><br>
+                            <a href="img/EZAds/Cover_1.pdf" target="_blank">
+                                <img class="col-12"src="img/EZAds/Cover_1.jpg">
+                            </a>
+                            <br><br><br>
+                            <a href="img/EZAds/Custom_DPS1.pdf" target="_blank">
+                                <img class="col-12"src="img/EZAds/Custom_DPS1.jpg">
+                            </a>
+                            <br><br><br>
+                            Third-Party Service Advertisement:
+                            <a href="img/EZAds/Custom_2.pdf" target="_blank">
+                                <img class="col-12" src="img/EZAds/Custom_2.jpg">
+                            </a>
+                            <br><br><br>
+                            Example of Books Paginated<br>(Mix of Created & Client Supplied Ads) - Click for Link:
+                            <a href="https://issuu.com/realestatebookkc/docs/32707.24.4ebook" target="_blank">
+                                <img class="col-12" src="img/EZAds/Pagination.jpg">
+                            </a>
+                        </p>
                     </div>
 
                     <div class="modal-footer justify-content-center">
-                      <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
+                    <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
                     </div>
                 </div>
-              </div>
-          </div>
+            </div>
         </div>
-      -->
+
+        <!-- OSV Modal --> 
+        <div class="modal fade" id="osvModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #070012;">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="ModalLabel">Our Sunday Visitor Work Examples</h4>
+                        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p style="font-size: 1em;">
+                            <h4>Click Images to Enlarge</h4>
+                            <br>
+                            Flyer for Multi-Media Packages:
+                            <a href="img/OSV/OSVNewsweekly_Ad_Flyer_2.jpg" target="_blank">
+                                <img class="col-12" src="img/OSV/OSVNewsweekly_Ad_Flyer_2.jpg">
+                            </a>
+                            <br><br><br>
+                            Third-Party Advertisement:
+                            <a href="img/OSV/OSV_ad1.jpg" target="_blank">
+                                <img class="col-12" src="img/OSV/OSV_ad1.jpg">
+                            </a>
+                            <br><br><br>
+                            First-Party Product Advertisements:
+                            <a href="img/OSV/OSV_Promo1.jpg" target="_blank">
+                                <img class="col-12"src="img/OSV/OSV_Promo1.jpg">
+                            </a>
+                            <br><br><br>
+                            <a href="img/OSV/OSV_Mailers.jpg" target="_blank">
+                                <img class="col-12" src="img/OSV/OSV_Mailers.jpg">
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Elemental Modal --> 
+        <div class="modal fade" id="elementalModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #070012;">
+                    <div class="modal-header">
+                    <h4 class="modal-title" id="ModalLabel">Elemental Supplements<br>Work Examples</h4>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p style="font-size: 1em;">
+                            <h4>Click Images to Enlarge</h4>
+                            <br>
+                            Logo Lock-Ups:
+                            <a href="img/elemental/ElementalLogoBlack.png" target="_blank">
+                                <img class="col-12" src="img/elemental/ElementalLogo4.png">
+                            </a>
+                            <br><br><br><br>
+                            <a href="img/elemental/ElementalHorizLogoBlack.png" target="_blank">
+                                <img class="col-12" src="img/elemental/ElementalHorizLogo3.png">
+                            </a>
+                            <br><br><br><br>
+                            <a href="img/elemental/ElementalLogoMarkBlack.png" target="_blank">
+                                <img class="col-12" src="img/elemental/ElementalLogoMark.png">
+                            </a>
+                            <br><br><br><br>
+                            Website Design:
+                            <img class="col-12" src="img/elemental/elementalWebMockup.jpg">
+                            <br><br>
+                            <a href="https://xd.adobe.com/view/2d8da4fe-cefa-467b-8d0f-9239d61b6b62-78de/?fullscreen&hints=off" target="_blank"
+                            style="display: flex; justify-content: space-evenly;">
+                                <button type="button" class="btn btn-outline-light buttonText py-2 my-2 justify-content-center">
+                                    Desktop & Tablet Website
+                                </button>
+                            </a>
+                            <br><br><br>
+                            Supplement Packaging:
+                            <a href="img/elemental/elementalPackaging.pdf" target="_blank">
+                                <img class="col-12"src="img/elemental/ElementalProducts3.jpg">
+                            </a>
+                            <br><br><br>
+                            Apparel:
+                            <a href="img/elemental/ShirtsDesign1.png" target="_blank">
+                                <img class="col-12"src="img/elemental/ShirtsDesign1.png">
+                            </a>
+                            <br><br><br>
+                            <a href="img/elemental/ShirtsDesign2.png" target="_blank">
+                                <img class="col-12"src="img/elemental/ShirtsDesign2.png">
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- YumYum Modal --> 
+        <div class="modal fade" id="yumyumModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #070012;">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="ModalLabel">YumYum Boards Work Examples</h4>
+                        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" style="color: white;"><h2>X</h2></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p style="font-size: 1em;">
+                            <h4>Click Images to Enlarge</h4>
+                            <br>
+                            Logo Lock-Ups:
+                            <a href="img/yumyum/yumyumLogo.png" target="_blank">
+                                <img class="col-12" src="img/yumyum/yumyumLogo.png">
+                            </a>
+                            <br><br><br>
+                            <a href="img/yumyum/yumyumSignature.png" target="_blank">
+                                <img class="col-12" src="img/yumyum/yumyumSignature.png">
+                            </a>
+                            <a href="img/yumyum/YumYumDonut.png" target="_blank">
+                                <img class="col-12" src="img/yumyum/YumYumDonut.png">
+                            </a>
+                            <br><br><br>
+                            Website Design:
+                            <img class="col-12" src="img/yumyum/WebDevicesMockup.png">
+                            <br><br>
+                            <a href="https://xd.adobe.com/view/9a383e66-672f-4abc-89b9-e56c06d2984d-cf6b/?fullscreen&hints=off" target="_blank"
+                            style="display: flex; justify-content: space-evenly;">
+                                <button type="button" class="btn btn-outline-light buttonText py-2 my-2 justify-content-center">
+                                    Desktop & Tablet Website
+                                </button>
+                            </a>
+                            <br><br><br>
+                            Board Designs:
+                            <a href="img/yumyum/BoardDesigns.pdf" target="_blank">
+                                <img class="col-12"src="img/yumyum/BoardsMockUp.png">
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-outline-light col-5" data-mdb-dismiss="modal" style="font-size: 1em;">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
       </div>
 
       <!-- Experience Section -->

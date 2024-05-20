@@ -24,6 +24,7 @@ header{
     height: 7%;
     opacity: 1;
     backdrop-filter: blur(5px);
+    background-color: rgba(24, 3, 46, 0.33);
     z-index: 11;
 }
 
@@ -284,12 +285,6 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
     background-position: center;
 }
 
-#rainbowBakeryImg{
-    background-image: url(../img/rainbowBakery.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
 #pythonCollectionImg{
     background-image: url(../img/pythonProgramCollectionMockup.jpg);
     background-size: cover;
@@ -298,6 +293,12 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 
 #tmProjectImg{
     background-image: url(../img/TM_MockupLarge.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#etchSketchImg{
+    background-image: url(../img/etch_a_sketch.png);
     background-size: cover;
     background-position: center;
 }
