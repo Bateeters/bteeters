@@ -303,6 +303,12 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
     background-position: center;
 }
 
+#calcImg{
+    background-image: url(../img/calculator.png);
+    background-size: cover;
+    background-position: center;
+}
+
 .accordion{
     --mdb-accordion-active-color:peachpuff;
 }
