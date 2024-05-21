@@ -309,6 +309,12 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
     background-position: center;
 }
 
+#libraryImg{
+    background-image: url(../img/library_app.png);
+    background-size: cover;
+    background-position: center;
+}
+
 .accordion{
     --mdb-accordion-active-color:peachpuff;
 }
