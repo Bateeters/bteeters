@@ -315,6 +315,12 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
     background-position: center;
 }
 
+#greenTechImg{
+    background-image: url(../img/greenTech_Innovations.png);
+    background-size: cover;
+    background-position: center;
+}
+
 .accordion{
     --mdb-accordion-active-color:peachpuff;
 }
@@ -413,34 +419,10 @@ footer{
     }
 
     .projectLayout{
-        flex-direction: initial;
+        flex-direction: column-reverse;
     }
 
-    #mobileAlienInvasionImg{
-        visibility: hidden;
-    }
-
-    #mobileTodoListImg{
-        visibility: hidden;
-    }
-
-    #mobileZodiacImg{
-        visibility: hidden;
-    }
-
-    #mobileCookbookImg{
-        visibility: hidden;
-    }
-
-    #mobileRainbowBakeryImg{
-        visibility: hidden;
-    }
-
-    #mobilePythonCollectionImg{
-        visibility: hidden;
-    }
-
-    #tmMobileImg{
+    #mobileImg{
         visibility: hidden;
     }
 
@@ -490,7 +472,7 @@ footer{
     
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1024px) {
     .hero{
         height: 100vh;
     }
@@ -542,6 +524,10 @@ footer{
 
     .buttonText{
         font-size: 1.75vw;
+    }
+
+    .projectLayout{
+        flex-direction: initial;
     }
  
 }
