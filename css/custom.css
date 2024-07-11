@@ -253,8 +253,19 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 }
 
 .sectionHeadB{
+    font-size: 1.5em;
     color: white;
     font-family: 'Playfair Display', serif;
+}
+
+.sectionHeadC{
+    font-size: 2.5em;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+.buttonText{
+    font-size: 1.5em;
 }
 
 .projectLayout{
