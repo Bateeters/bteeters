@@ -233,14 +233,14 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 
 .headerSmall{
     margin: 0px;
-    font-size: 5.5vw;
+    font-size: 1.45em;
     font-family: 'Nunito', sans-serif;
     color: white;
 }
 
 .headerLarge{
     margin: 0px;
-    font-size: 13.5vw;
+    font-size: 3.5em;
     font-family: 'Playfair Display', serif;
     color: white;
 }
@@ -395,15 +395,7 @@ footer{
     }
 
     .heroText{
-        padding: 290px 0px 100px 12.5%;
-    }
-
-    .headerSmall{
-        font-size: 2.5vw;
-    }
-    
-    .headerLarge{
-        font-size: 6.05vw;
+        padding: 0px 0px 13.5% 12.5%;
     }
 
     .sectionHead{
@@ -477,8 +469,12 @@ footer{
         height: 100vh;
     }
 
-    .heroText{
-        padding: 290px 0px 120px 12.5%;
+    .headerSmall{
+        font-size: 2.25em;
+    }
+    
+    .headerLarge{
+        font-size: 5.5em;
     }
 
     .sectionHead{
